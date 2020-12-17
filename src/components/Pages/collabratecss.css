@@ -1,0 +1,160 @@
+.collcontainer {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+.collmaincontainer {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+
+  height: 100vh;
+  width: 100%;
+
+  object-fit: contain;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+
+.collheading1 {
+  text-align: start;
+  color: #242424;
+  font-size: clamp(3.5rem, 5vw, 2rem);
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+.input-areas {
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+.colfooter-input {
+  padding: 8px 20px;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: 1.5px solid #222222;
+}
+.cbutn {
+  background-color: #343bfc;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.colldesc {
+  text-align: start;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-size: 18px;
+}
+.cimg {
+  max-width: 450px;
+  padding-left: 20px;
+  padding-top: 2rem;
+}
+
+/*bcsbdcsadh;c*/
+.colcolumn1 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.colWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+/*vsahfb*/
+
+.colourteam {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 4rem;
+}
+.colheading {
+  text-align: start;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-top: 11rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+.coldec {
+  text-align: start;
+  padding-right: 10px;
+  padding-left: 2rem;
+  font-size: 16px;
+}
+
+.colIcon {
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+.colImages {
+  max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .collmaincontainer {
+    grid-template-columns: 1fr;
+    padding-top: 1px;
+    padding-left: 1px;
+  }
+  .collheading1 {
+    font-size: clamp(2.5rem, 5vw, 2rem);
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  .input-areas {
+    padding-left: 30px;
+    padding-top: 2rem;
+  }
+
+  .colldesc {
+    text-align: start;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .cimg {
+    max-width: 350px;
+    padding-left: 20px;
+    padding-top: 1rem;
+  }
+  /*hdcbdasj*/
+  .colcolumn1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .colWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+  }
+  /*jdhsvba*/
+
+  .colourteam {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 4rem;
+  }
+  .colheading {
+    text-align: start;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 0 30px;
+  }
+  .coldec {
+    text-align: start;
+
+    padding-left: 2rem;
+    font-size: 16px;
+  }
+  .colIcon {
+    max-width: 350px;
+  }
+}

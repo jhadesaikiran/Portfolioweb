@@ -1,16 +1,23 @@
 import React from "react";
 import "../../App.css"
-import Cards from "../Cards";
+import Aboutus from "../Homepagecomponent/Aboutus"
+import Cards from "../Homepagecomponent/Cards";
 import Footer from "../Footer";
-import Mainsection from "../Mainsection"
+import Mainsection from "../Homepagecomponent/Mainsection"
+import Stats from "../Homepagecomponent/Stats";
+import Testimonials from "../Homepagecomponent/Testimonials";
 
 
 function Home() {
     return(
         <>
         <Mainsection/>
+        <Aboutus/>
 <Cards/>
+
+<Stats/>
 <Footer/>
+
         </>
     )
 }

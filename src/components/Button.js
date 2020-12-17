@@ -23,7 +23,7 @@ export const Button = ({
       return(
           <Link to='/collabrate' className='btn-mobile'>
               <button 
-              className={`btn ${checkButtonStyle} ${checkButtonStyle}`} 
+              className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
               onClick={onClick}
               type={type}
               >
