@@ -6,7 +6,7 @@
 }
 
 .hosbutn {
-  width: 240px;
+  /* width: 240px;
   border: 1px solid #3498db;
   color: aliceblue;
   background: none;
@@ -15,6 +15,21 @@
   font-size: 20px;
   font-family: "montserrat";
   padding: 8px 20px;
+  */
+  border: none;
+  background: #bcd3ff;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  font-family: var(--Livvic);
+  cursor: pointer;
+}
+.hosbutn:hover {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 .hosheading1 {
   text-align: start;
@@ -78,7 +93,7 @@
   }*/
 .hosuseswrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
   padding: 0 6rem;
   margin-top: 8rem;
 }
@@ -86,7 +101,7 @@
 .hoscolumn1 {
   display: grid;
   grid-template-rows: 0.3fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,7 +114,8 @@
 }
 .hosuser1vec {
   position: relative;
-  max-width: 700px;
+  float: center;
+  max-width: 400px;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,11 +134,11 @@
 @media screen and (max-width: 768px) {
   .hoshowcontainer {
     grid-template-columns: 1fr;
-    padding: 0 30px;
+    padding: 0 1px;
   }
 }
 .hoshowData {
-  grid-gap: 10px;
+  grid-gap: 30px;
 }
 .hoscoln1 {
   display: grid;
@@ -131,7 +147,10 @@
 .hoscoln2 {
   display: grid;
 }
-
+.hoscoln2 h4 {
+  display: grid;
+  color: blue;
+}
 @media screen and (max-width: 768px) {
   .hoscoln2 {
     grid-template-columns: 1fr;
@@ -148,6 +167,8 @@
 }
 .hoscol1inside {
   padding-left: 2rem;
+  line-height: 30px;
+  margin-top: -1rem;
 }
 .hosuser1pic {
   position: relative;
@@ -167,10 +188,14 @@
     position: relative;
     max-width: 300px;
   }
+  .hoscol1inside {
+    margin-top: -3rem;
+    line-height: 30px;
+    padding-right: 1rem;
+    padding-left: 2rem;
+  }
 }
-.hoscol1inside {
-  line-height: 30px;
-}
+
 .Desch {
   color: #3b3b3b;
   font-weight: 300;

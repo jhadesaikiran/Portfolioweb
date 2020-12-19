@@ -23,23 +23,28 @@ const userData =[
 
 const howData =[
     {
+     color :"#343BFC",
         title : "Search and select the hospitals nearby",
         desc : "User can search hospital according to his location. Person can book from anyplace from the world"
          
     },
     {
+        color :"#B2C248",
         title : "Book an Ambulance and premedication in ambulance",
         desc : "User can book and ambulance by calling to the hospital authority and send them the exact location"
     },  
     {
+        color :"#E55B3C",
         title : "Track Ambulance and connect to driver ",
         desc : "After accepting the ride, you can track and get in touch with ambulance driver "
     },
     {
+        color :"#00ff00",
         title : "Live feed to hospital doctors ",
         desc : "user can directly send live feed to doctors and keep them steady "
     },
     {
+        color :"#808000",
         title : "Premedication ",
         desc : "By the time patient arrives to hospital, hospital help be ready with the premediction that is to be done  "
     },
@@ -57,11 +62,11 @@ export default function UserWeb() {
      User Website
 </div>
 <div className="button">
-    <button  className="butn" onClick={()=>window.location.replace('https://user.prioritypulse.co.in/login')}> Book an Ambulance</button>
+    <button  className="ubutn" onClick={()=>window.location.replace('https://user.prioritypulse.co.in/login')}> Book an Ambulance</button>
 </div>
 </div>
 <div className="col2">
-<div className="desc">
+<div className="udesc">
     <p>
     We built a User Website which serves patient  to book and track an ambulance from any remote location 
 This website help user to navigate at the exact spot of emergency, send live feed of  patient updates on condition and it serves the main part of the premedication
@@ -101,8 +106,8 @@ How it Works ?
             <div className="col1inside">
             {howData.map((item, index)=>{
                      return(
-                         <div className="howData" key="index">
-                           <div  className="Titleh" >{item.title}</div>
+                         <div className="uhowData" key="index">
+                           <div style={{color: `${item.color}`}} className="Titleh" >{item.title}</div>
                            <div className="Desch">{item.desc}</div>
                          </div>
                      )
@@ -112,6 +117,7 @@ How it Works ?
             </div>
             </div>
             <div className="coln2">
+                
             <div > 
                     <h4>Book Ambulance</h4>
                     <img className="user1pic" src={user1}  />

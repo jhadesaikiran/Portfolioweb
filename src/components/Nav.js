@@ -57,7 +57,10 @@ window.addEventListener('resize',showButton)
                         </Link>
                       </li>
                   </ul>
-                  {button && <Button buttonStyle='btn--outline'>Collabrate</Button>}
+                  <Link to="/collabrate">
+                  {button && <Button connecting = "https://prioritypulse.co.in/collabrate" buttonStyle='btn--outline'>Collabrate</Button>
+                  }
+                  </Link>
                </div>
          </nav> 
         </>

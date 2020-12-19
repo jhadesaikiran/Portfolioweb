@@ -57,18 +57,18 @@ const userData =[
 const teamData =[
     {
         icon :<img className="colImages" src={Nithish} />,
-        title: "Nithish verevalli",
-        desc:"Founder & CEO ,Electronics, IIT BHU Varanasi",
+        title: "Nithish Veeravalli",
+        desc:"Founder & CEO, App developer, Electronics, IIT BHU Varanasi",
     },
     {
         icon :<img className="colImages" src={Kiran} />,
         title: "Jhade Sai Kiran",
-        desc:"Co-Founder & COO ,Mechanical, IIT BHU Varanasi",
+        desc:"Co-Founder & COO, Front-end developer, Mechanical, IIT BHU Varanasi",
     },
     {
         icon :<img className="colImages" src={harish} />,
         title: "Medam Sai Harish",
-        desc:"Co-Founder & CTO ,Mechanical, IIT BHU Varanasi",
+        desc:"Co-Founder & CTO, Full-stack developer, Mechanical, IIT BHU Varanasi",
     },
     {
         icon :<img className="colImages" src={sudeep} />,
@@ -116,7 +116,7 @@ This website help user to navigate at the exact spot of emergency, send live fee
 
    
    <div className="colcolumn1">
-   <div className="heading">
+   <div className="colpheading">
   Perks 
        </div>
        <div className="colWrapper">     

@@ -10,7 +10,8 @@ export const Button = ({
     type,
     onClick,
     buttonStyle,
-    buttonSize
+    buttonSize,
+    connecting
 })=>{
     const checkButtonStyle = STYLES.includes(buttonStyle)
      ? buttonStyle
@@ -21,10 +22,11 @@ export const Button = ({
       :SIZES[0];
 
       return(
-          <Link to='/collabrate' className='btn-mobile'>
+          <Link className='btn-mobile'>
               <button 
+               onClick={()=>window.location.replace(connecting)}
               className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
-              onClick={onClick}
+           //   onClick={onClick}
               type={type}
               >
                   {children}

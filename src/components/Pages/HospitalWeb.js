@@ -21,23 +21,24 @@ const hosData =[
 
 const hoshowData =[
     {
+        color :"#343BFC",
         title : "Booking and track ambulance",
         desc : "Hospital authority can give and confirm booking by filling data and assigning the driver."
          
     },
-    {
+    { color :"#B2C248",
         title : "Live Feed",
         desc : "Doctors can get a live feed from the paitent and respond accordingly"
     },  
-    {
+    {  color :"#E55B3C",
         title : "Premedication",
         desc : "Authority can make arrangements as doctor could know whole situation of the case."
     },
-    {
+    { color :"#00ff00",
         title : "Manage Ambulance drivers",
         desc : "Can assign, add, manage ambulance drivers and know each rides they make. "
     },
-    {
+    { color :"#808000",
         title : "Requesting traffic control to give access of traffic light",
         desc : "Hospital authority can request traffic control to change traffic lights according to the ride "
     },
@@ -95,7 +96,7 @@ How it Works ?
             {hoshowData.map((item, index)=>{
                      return(
                          <div className="hoshowData" key="index">
-                           <div  className="Titleh" >{item.title}</div>
+                           <div style={{color: `${item.color}`}}  className="Titleh" >{item.title}</div>
                            <div className="Desch">{item.desc}</div>
                          </div>
                      )
