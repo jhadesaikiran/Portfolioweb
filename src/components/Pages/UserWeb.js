@@ -7,17 +7,20 @@ import user1 from "../images/userwebpic.JPG"
 import user2 from "../images/USERTRACK.JPG"
 import user1vec from "../images/user1vec.jpg"
 
+import userabout from "../images/userabout.JPG"
+import userlogin from "../images/userlogin.JPG"
+
 
 const userData =[
     {
-        icon :<i  class="fas fa-location" style={{color:"343BFC7"}}></i>,
+        icon :<i  class="fas fa-location" style={{color:"#343BFC"}}></i>,
         title: "Book and track from anyplace",
-        desc:"person can book from anyplace from the world",
+        desc:"Person can book from anyplace and Track it from the world.",
     },
     {
         icon :<i class="fas fa-video"  style={{color:"#B2C248"}}></i>,
         title: "Live feed to hospital and doctor",
-        desc:"person can book from anyplace from the world",
+        desc:"Patient and Doctor can be connected with live feed.",
     },
 ]
 
@@ -25,28 +28,28 @@ const howData =[
     {
      color :"#343BFC",
         title : "Search and select the hospitals nearby",
-        desc : "User can search hospital according to his location. Person can book from anyplace from the world"
+        desc : "User can search hospital according to his location. Person can book from anyplace from the world."
          
     },
     {
         color :"#B2C248",
         title : "Book an Ambulance and premedication in ambulance",
-        desc : "User can book and ambulance by calling to the hospital authority and send them the exact location"
+        desc : "User can book and ambulance by calling to the hospital authority and send them the exact location."
     },  
     {
         color :"#E55B3C",
         title : "Track Ambulance and connect to driver ",
-        desc : "After accepting the ride, you can track and get in touch with ambulance driver "
+        desc : "After accepting the ride, you can track and get in touch with ambulance driver. "
     },
     {
         color :"#00ff00",
         title : "Live feed to hospital doctors ",
-        desc : "user can directly send live feed to doctors and keep them steady "
+        desc : "user can directly send live feed to doctors and keep them steady. "
     },
     {
         color :"#808000",
         title : "Premedication ",
-        desc : "By the time patient arrives to hospital, hospital help be ready with the premediction that is to be done  "
+        desc : "By the time patient arrives to hospital, hospital help be ready with the premediction that is to be done.  "
     },
 ]
 
@@ -117,15 +120,31 @@ How it Works ?
             </div>
             </div>
             <div className="coln2">
-                
-            <div > 
-                    <h4>Book Ambulance</h4>
-                    <img className="user1pic" src={user1}  />
-                    </div>
-                <div>
-                <h4>Track Ambulance</h4>
-                <img className="user2pic" src={user2}  />
-                </div>
+              <div className="slider">
+                  
+<div className="images">
+<input type="radio" name="slide" id="img1"  />
+<input type="radio" name="slide" id="img2" />
+<input type="radio" name="slide" id="img3" />
+<input type="radio" name="slide" id="img4" />
+
+     <img className="m1 first" src={userlogin} alt="img1"  />
+<img className="m1" src={user1} alt="img2" />
+<img className="m1" src={user2} alt="img3" />
+<img className="m1" src={userabout} alt="img4" />
+
+
+
+     </div>
+     <div className="dots">
+<label for="img1"></label>
+<label for="img2"></label>
+<label for="img3"></label>
+<label for="img4"></label>
+     </div>
+ 
+</div>  
+           
             </div>
 
 </div>
@@ -135,3 +154,16 @@ How it Works ?
         </>
     )
 }
+
+/*
+        
+            <div >        
+                    <h4>Book Ambulance</h4>
+                    <img className="user1pic" src={user1}  />
+                    </div>
+                <div>
+                <h4>Track Ambulance</h4>
+                <img className="user2pic" src={user2}  />
+                </div>
+
+*/

@@ -76,6 +76,7 @@
   }
   .udesc {
     padding-top: 1rem;
+    font-size: 18px;
   }
   .ubutn {
     margin-top: 2rem;
@@ -145,9 +146,65 @@
   display: grid;
   grid-template-rows: 0.3fr 1fr;
 }
+
 .coln2 {
   display: grid;
+  justify-content: center;
 }
+
+.slider {
+  margin-top: 5rem;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+}
+.images {
+  display: flex;
+  width: 100%;
+}
+.images img {
+  transition: all 0.15s ease;
+  width: 100%;
+}
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #222222 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover {
+  background: #3b3b3b;
+}
+
+.m1 {
+  position: relative;
+  max-width: 500px;
+  transition: 2s;
+}
+#img1:checked ~ .first {
+  margin-left: 0;
+}
+#img2:checked ~ .first {
+  margin-left: -100%;
+}
+#img3:checked ~ .first {
+  margin-left: -200%;
+}
+#img4:checked ~ .first {
+  margin-left: -300%;
+}
+
 .coln2 h4 {
   color: #3498db;
 }
@@ -162,13 +219,10 @@
   margin-top: -1rem;
   line-height: 30px;
 }
-.user1pic {
-  position: relative;
-  max-width: 400px;
-}
+
 .user2pic {
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
 }
 @media screen and (max-width: 768px) {
   .user1pic {

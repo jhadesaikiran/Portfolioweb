@@ -65,7 +65,7 @@
   text-align: start;
   font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 2rem;
-  margin-top: -1rem;
+  margin-top: -5rem;
   padding: 0 2rem;
 }
 .colWrapper {
@@ -99,9 +99,9 @@
   max-width: 500px;
   margin-bottom: 1rem;
 }
-.colImages {
-  max-width: 200px;
-  object-fit: contain;
+
+.colImages1 {
+  max-height: 220px;
 }
 
 @media screen and (max-width: 768px) {

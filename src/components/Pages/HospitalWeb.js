@@ -5,6 +5,8 @@ import "./hospitalcss.css"
 import user1vec from "../images/hosroomvec.jpg"
 import user1 from "../images/hospital.JPG"
 import user2 from "../images/hostrack.JPG"
+import hoslogin from "../images/hoslogin.JPG"
+import userabout from "../images/userabout.JPG"
 
 const hosData =[
     {
@@ -56,7 +58,7 @@ export default function HospitalWeb() {
                  <div className="hoscol2">
                  <div className="hosdesc">
     <p>
-    We developed Hospital Website  form which hospitals can prepare for premedication and get feed from the user and from ambulance in real time and to have control over ambulance drivers  </p>
+    We developed Hospital Website from which hospitals can prepare for premedication and get feed from the user and from ambulance in real time and to have control over ambulance drivers.  </p>
 </div>
                  </div>
                   </div>
@@ -106,14 +108,30 @@ How it Works ?
             </div>
             </div>
             <div className="hoscoln2">
-            <div > 
-                    <h4>Book Ambulance</h4>
-                    <img className="hosuser1pic" src={user1}  />
-                    </div>
-                <div>
-                <h4>Track Ambulance</h4>
-                <img className="hosuser2pic" src={user2}  />
-                </div>
+            <div className="slider">
+                  
+                  <div className="images">
+                  <input type="radio" name="slide" id="img1"  />
+                  <input type="radio" name="slide" id="img2" />
+                  <input type="radio" name="slide" id="img3" />
+                  <input type="radio" name="slide" id="img4" />
+                  
+                       <img className="m1 first" src={hoslogin} alt="img1"  />
+                  <img className="m1" src={user1} alt="img2" />
+                  <img className="m1" src={user2} alt="img3" />
+                  <img className="m1" src={userabout} alt="img4" />
+                  
+                  
+                  
+                       </div>
+                       <div className="dots">
+                  <label for="img1"></label>
+                  <label for="img2"></label>
+                  <label for="img3"></label>
+                  <label for="img4"></label>
+                       </div>
+                   
+                  </div>  
             </div>
 
 </div>
@@ -125,3 +143,14 @@ How it Works ?
         </>
     )
 }
+
+/*
+   <div > 
+                    <h4>Book Ambulance</h4>
+                    <img className="hosuser1pic" src={user1}  />
+                    </div>
+                <div>
+                <h4>Track Ambulance</h4>
+                <img className="hosuser2pic" src={user2}  />
+                </div>
+*/

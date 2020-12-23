@@ -34,14 +34,21 @@
 .hosheading1 {
   text-align: start;
   color: aliceblue;
-  font-size: clamp(3.5rem, 5vw, 2rem);
+  font-family: "Protogrotesk Extra Light", Helvetica, Arial, Lucida, sans-serif;
+  /* font-size: clamp(3.5rem, 5vw, 2rem);*/
+  font-size: 46px;
+  line-height: 68px;
+  font-weight: 600;
   padding-left: 5rem;
   padding-top: 5rem;
 }
 .hosdesc {
-  color: aliceblue;
+  color: #dedede;
   text-align: start;
-  padding-top: 1rem;
+  font-family: "Akzidenz Grotesk Pro";
+  line-height: 32px;
+  padding-top: -1rem;
+  font-weight: 200px;
   padding-left: 5rem;
   font-size: 20px;
 }

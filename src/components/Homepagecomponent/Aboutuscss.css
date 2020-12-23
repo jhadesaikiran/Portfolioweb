@@ -16,6 +16,8 @@
 .aboutuscontainer p {
   text-align: start;
   margin-bottom: 1rem;
+  font-size: 17px;
+  font-weight: 200;
   padding: 0 2rem;
   color: #3b3b3b;
 }
@@ -49,5 +51,8 @@
   }
   .aboutuscontainer {
     padding: 30px;
+  }
+  .aboutuscontainer p {
+    font-size: 15px;
   }
 }

@@ -125,4 +125,8 @@ h1 {
     padding: 30px;
     background: #fff;
   }
+  .cards__item__text {
+    font-size: 15px;
+    font-weight: 250;
+  }
 }

@@ -8,7 +8,7 @@ function Aboutus() {
           
             <div className="heading">
 
-               About Us
+          Our Idea
             </div>
             <div className="contentwrapper">
             <div className="coloum1"> 

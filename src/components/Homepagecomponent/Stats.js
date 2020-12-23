@@ -5,22 +5,22 @@ const StasData =[
     {
         icon :<i  class="fas fa-location" style={{color:"#343BFC"}}></i>,
         title: "Book and track from anyplace",
-        desc:"person can book from anyplace from the world",
+        desc:"Person can book from anyplace and Track it from the world",
     },
     {
         icon :<i class="fas fa-video"  style={{color:"#B2C248"}}></i>,
-        title: "Live feed to hospital and doctor",
-        desc:"person can book from anyplace from the world",
+        title: "Live feed to hospital and Doctor",
+        desc:"Patient and Doctor can be connected with live feed",
     },
     {
         icon :<i class="fas fa-traffic-light"  style={{color:"green"}}></i>,
-        title: "Get way in traffic",
+        title: "Get way in Traffic",
         desc:"Get the Traffic signals turn to green in your way. ",
     },
     {
         icon :<i class="fas fa-hospital"  style={{color:"#E55B3C"}}></i>,
         title: "Premedication",
-        desc:"person can book from anyplace from the world",
+        desc:"Hospitals can prepare for premedication as doctors know the whole situation.",
     },
     {
         icon :<i class="fas fa-calendar-plus" style={{color:"#00ff00"}}></i>,

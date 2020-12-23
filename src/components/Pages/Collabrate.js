@@ -16,63 +16,71 @@ const userData =[
     {
         icon :<i  class="fas fa-location" style={{color:"#343BFC"}}></i>,
         title: "Book and track from anyplace",
-        desc:"person can book from anyplace from the world",
+        desc:"You will have the command over ambulances and will be globally seen. ",
     },
     {
         icon :<i class="fas fa-video"  style={{color:"#B2C248"}}></i>,
         title: "Live feed to hospital and doctor",
-        desc:"person can book from anyplace from the world",
+        desc:"Doctors can get live feed from the ambulance and prepare for premedication.",
     },
     {
         icon :<i class="fas fa-hospital"  style={{color:"#E55B3C"}}></i>,
         title: "Premedication",
-        desc:"person can book from anyplace from the world",
+        desc:"Hospitals can prepare for premedication as doctors know the whole situation.",
     },
     {
         icon :<i class="fas fa-calendar-plus" style={{color:"#00ff00"}}></i>,
         title: "First to Market",
-        desc:"We are first to introduce the traffic access technology, collaboration with government ",
+        desc:"We are first to introduce the traffic access technology, collaboration with government. ",
     },{
         icon :<i  class="fas fa-users-cog" style={{color:"#C0C0C0"}}></i>,
         title: "Command over Ambulance",
-        desc:"Hospital authority can assign, command over ambulance ",
+        desc:"Hospital authority can assign drivers and command over ambulance. ",
     },
     {
         icon :<i class="fas fa-hands-helping" style={{color:"#808000"}}></i>,
         title: "Trust",
-        desc:"People get trust as they have every thing that a hospital authority can give",
+        desc:"People get trust as they have every thing that a hospital authority can give.",
     },
     {
         icon :<i class="fas fa-chart-bar"  style={{color:"green"}}></i>,
         title: "Competition",
-        desc:"As we have a national connection, you can get publicity by all means",
+        desc:"As we have a national connections, you can get publicity by all means.",
     },
     {
         icon :<i class="fas fa-tachometer-alt" style={{color:"#FFA500"}}></i>,
         title: "Success Rate",
-        desc:"As you will be increasing patient survival, there will be success in saving lifes",
+        desc:"As you will be increasing patient survival, there will be success in saving lifes.",
     },
 ]
 
 const teamData =[
     {
-        icon :<img className="colImages" src={Nithish} />,
+        icon :<img className="colImages1" src={Nithish} />,
         title: "Nithish Veeravalli",
+       contact: "9182687397",
+       mail: "veeravallin.ece18@itbhu.ac.in",
         desc:"Founder & CEO, App developer, Electronics, IIT BHU Varanasi",
     },
     {
-        icon :<img className="colImages" src={Kiran} />,
+        icon :<img className="colImages1" src={Kiran} />,
         title: "Jhade Sai Kiran",
+        contact: "7032629788",
+        mail: "jhadesaikiran.mec18@itbhu.ac.in",
         desc:"Co-Founder & COO, Front-end developer, Mechanical, IIT BHU Varanasi",
     },
     {
-        icon :<img className="colImages" src={harish} />,
+        icon :<img className="colImages1" src={harish} />,
         title: "Medam Sai Harish",
+        contact: "6304775653",
+        mail: "medam.saiharish.mec19@itbhu.ac.in",
         desc:"Co-Founder & CTO, Full-stack developer, Mechanical, IIT BHU Varanasi",
     },
     {
-        icon :<img className="colImages" src={sudeep} />,
+        icon :<img className="colImages1" src={sudeep} />,
         title: "Kandru Sudeep Kumar",
+        contact: "9505445002",
+        mail: "kandrusudeepkr.mec18@itbhu.ac.in",
         desc:"Executive-Manager,Mechanical, IIT BHU Varanasi",
     },
 ]
@@ -156,6 +164,8 @@ faster than a cab."
                               <div className="Icon">{item.icon}</div>
                               <div className="Title">{item.title}</div>
                               <div className="Desc">{item.desc}</div>
+                              <div className="contact">{item.contact}</div>
+                              <div className="contact">{item.mail}</div>
                             </div>
                         )
                     })}   
