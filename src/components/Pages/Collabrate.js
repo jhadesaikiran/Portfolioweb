@@ -12,6 +12,7 @@ import Footer from "../Footer";
 import connecting from "../images/connecting.JPG"
 
 
+
 const userData =[
     {
         icon :<i  class="fas fa-location" style={{color:"#343BFC"}}></i>,
@@ -60,28 +61,32 @@ const teamData =[
         title: "Nithish Veeravalli",
        contact: "9182687397",
        mail: "veeravallin.ece18@itbhu.ac.in",
-        desc:"Founder & CEO, App developer, Electronics, IIT BHU Varanasi",
+        desc:"Founder, App developer",
+        clg : "IIT BHU Varanasi",
     },
     {
         icon :<img className="colImages1" src={Kiran} />,
         title: "Jhade Sai Kiran",
         contact: "7032629788",
         mail: "jhadesaikiran.mec18@itbhu.ac.in",
-        desc:"Co-Founder & COO, Front-end developer, Mechanical, IIT BHU Varanasi",
+        desc:"Co-Founder, Front-end developer",
+        clg : "IIT BHU Varanasi",
     },
     {
         icon :<img className="colImages1" src={harish} />,
         title: "Medam Sai Harish",
         contact: "6304775653",
         mail: "medam.saiharish.mec19@itbhu.ac.in",
-        desc:"Co-Founder & CTO, Full-stack developer, Mechanical, IIT BHU Varanasi",
+        desc:"Co-Founder, Full-stack developer",
+        clg : "IIT BHU Varanasi",
     },
     {
         icon :<img className="colImages1" src={sudeep} />,
         title: "Kandru Sudeep Kumar",
         contact: "9505445002",
         mail: "kandrusudeepkr.mec18@itbhu.ac.in",
-        desc:"Executive-Manager,Mechanical, IIT BHU Varanasi",
+        desc:"Executive-Manager",
+        clg : "IIT BHU Varanasi",
     },
 ]
 
@@ -91,7 +96,7 @@ export default function Collabrate() {
         <div className="collcontainer" >
         <div className="collmaincontainer">
                 <div className="collcol1">
-                      <div className="collheading1">Collabrate With Us</div> 
+                      <div className="collheading1">Collaborate With Us</div> 
                       <div className='input-areas'>
           <form>
             <input
@@ -164,8 +169,9 @@ faster than a cab."
                               <div className="Icon">{item.icon}</div>
                               <div className="Title">{item.title}</div>
                               <div className="Desc">{item.desc}</div>
-                              <div className="contact">{item.contact}</div>
-                              <div className="contact">{item.mail}</div>
+                              <div className="clg">{item.clg}</div>
+                              <div className="contact"><i class="fas fa-phone" style={{color:"#343BFC"}}></i>{item.contact}</div>
+                              <div className="contact"><i class="fas fa-envelope" style={{color:"#E55B3C"}}></i>{item.mail}</div>
                             </div>
                         )
                     })}   

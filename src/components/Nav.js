@@ -53,13 +53,13 @@ window.addEventListener('resize',showButton)
                       </li>
                       <li className="nav-item">
                         <Link to='/collabrate' className="nav-links-mobile" onClick={closeMobileMenu}>
-                           Collabrate
+                           Collaborate
                         </Link>
                       </li>
                   </ul>
                   <Link to="/collabrate">
                   {button && <Button className="btns" connecting = "https://prioritypulse.co.in/collabrate" buttonStyle="btn--primary"
-buttonSize="btn--large">Collabrate</Button>
+buttonSize="btn--large">Collaborate</Button>
                   }
                   </Link>
                </div>

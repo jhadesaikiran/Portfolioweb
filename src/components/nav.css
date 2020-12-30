@@ -65,7 +65,7 @@
 .nav-links:focus {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
-  color: #aaaaaa;
+  color: #ffff00;
 }
 
 .fa-bars {

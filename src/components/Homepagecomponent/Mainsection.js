@@ -22,7 +22,7 @@ connecting = "https://prioritypulse.co.in/collabrate"
 className="btns"
 buttonStyle="btn--primary"
 buttonSize="btn--large">
-   Collabrate with Us <i className="far fa-hands-helping"/>
+   Collaborate with Us <i className="far fa-hands-helping"/>
 </Button>
             </div>
         </div>
