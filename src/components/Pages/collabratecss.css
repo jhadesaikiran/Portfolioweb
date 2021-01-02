@@ -71,7 +71,7 @@
 .colWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 1px;
 }
 
 /*vsahfb*/
@@ -165,4 +165,7 @@
   .colIcon {
     max-width: 350px;
   }
+}
+.contact1 {
+  margin-left: 5px;
 }

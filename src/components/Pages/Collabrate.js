@@ -170,8 +170,8 @@ faster than a cab."
                               <div className="Title">{item.title}</div>
                               <div className="Desc">{item.desc}</div>
                               <div className="clg">{item.clg}</div>
-                              <div className="contact"><i class="fas fa-phone" style={{color:"#343BFC"}}></i>{item.contact}</div>
-                              <div className="contact"><i class="fas fa-envelope" style={{color:"#E55B3C"}}></i>{item.mail}</div>
+                              <div className="contact"><i class="fas fa-phone" style={{color:"#f9a602"}}></i> {`            ${item.contact}`}</div>
+                              <div className="contact"><i class="far fa-envelope" style={{color:"#f9a602"}}></i>{`      ${item.mail}`}</div>
                             </div>
                         )
                     })}   

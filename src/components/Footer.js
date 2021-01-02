@@ -31,10 +31,8 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
             <Link to='/'>Telephone no :</Link>
-            <Link to='/'>+91 7032629788</Link>
-            <Link to='/'>Office Address :</Link>
-            <Link to='/'>Priority Pulse, 5th Floor CDC IIT(BHU), Varanasi, UP 221005 India</Link>
-          </div>
+            <Link to='/'>+91 9182687397</Link>
+               </div>
         </div>
         <div className='footer-link-wrapper'>
          
@@ -52,7 +50,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               Priority Pulse
-              <i class="fas fa-traffic-light" />
+           
             </Link>
           </div>
           <small class='website-rights'>Priority Pulse © 2020</small>
