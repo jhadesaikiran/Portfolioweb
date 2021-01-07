@@ -88,14 +88,14 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              onClick={()=>window.location.replace('https://www.facebook.com/PriorityPulse/')}
+              onClick={()=>window.open('https://www.facebook.com/PriorityPulse/', '_blank', 'toolbar=0,location=0,menubar=0')}
               target='_blank'
               aria-label='Facebook'
             >
               <i class='fab fa-facebook-f' />
             </Link>
             <Link
-             onClick={()=>window.location.replace('https://www.instagram.com/priority_pulse/?hl=en')} 
+             onClick={()=>window.open('https://www.instagram.com/priority_pulse/?hl=en', '_blank', 'toolbar=0,location=0,menubar=0')} 
               class='social-icon-link instagram'
             
               target='_blank'
@@ -107,7 +107,7 @@ function Footer() {
          
             <Link
               class='social-icon-link twitter'
-              onClick={()=>window.location.replace('https://in.linkedin.com/company/priority-pulse-pvt')}
+              onClick={()=>window.open('https://in.linkedin.com/company/priority-pulse-pvt', '_blank', 'toolbar=0,location=0,menubar=0')}
               target='_blank'
               aria-label='LinkedIn'
             >
