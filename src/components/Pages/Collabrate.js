@@ -77,7 +77,7 @@ const teamData =[
         title: "Medam Sai Harish",
         contact: "6304775653",
         mail: "medam.saiharish.mec19@itbhu.ac.in",
-        desc:"Co-Founder, Full-stack developer",
+        desc:"Co-Founder,Full-stack developer",
         clg : "IIT BHU Varanasi",
     },
     {
