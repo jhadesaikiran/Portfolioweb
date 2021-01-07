@@ -71,7 +71,7 @@ export default function UserWeb() {
 <div className="col2">
 <div className="udesc">
     <p>
-    We built a User Website which serves patient  to book and track an ambulance from any remote location 
+    We built an User Website which serves patient  to book and track an ambulance from any remote location 
 This website help user to navigate at the exact spot of emergency, send live feed of  patient updates on condition and it serves the main part of the premedication
     </p>
 </div>

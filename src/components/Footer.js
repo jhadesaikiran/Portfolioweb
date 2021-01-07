@@ -13,24 +13,14 @@ function Footer() {
         <p className='footer-subscription-text'>
         Email : prioritypulse@gmail.com
         </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Contact</Button>
-          </form>
-        </div>
+      
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
         
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Telephone no :</Link>
+            <Link to='/'>Mobile no :</Link>
             <Link to='/'>+91 9182687397</Link>
                </div>
         </div>
@@ -43,6 +33,47 @@ function Footer() {
             <Link onClick={()=>window.location.replace('https://in.linkedin.com/company/priority-pulse-pvt')}>Linkedin</Link>
            
           </div>
+        </div>
+        <div className='footer-link-wrapper'>
+          <div className="footer-link-items">
+          <h2>Leave a Message</h2>
+
+        
+          <form className="form-input">
+
+     <div className='footer-input-areas'>
+            <div className="form-input-items">
+            <input
+               className="footer-input"
+              name="name"
+              type="name"
+              placeholder="Name"
+              />
+            <input
+              className='footer-input'
+              name='email'
+              type='email'
+              placeholder='Your Email'
+            />
+            </div>
+            <div  className="form-input-items">
+             <input
+              className='footer-input-text'
+              name='message'
+              type='text'
+              placeholder='Message'
+            />
+        </div>
+    </div>
+<div className="button-style-footer">
+            <button className='btnsend'>Contact</button>
+            <button className='btnsend'>Send</button>
+            </div>
+                 </form>
+        </div>
+
+
+      
         </div>
       </div>
       <section class='social-media'>

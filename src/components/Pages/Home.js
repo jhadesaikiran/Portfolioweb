@@ -16,6 +16,8 @@ function Home() {
 <Cards/>
 
 <Stats/>
+
+
 <Footer/>
 
         </>
