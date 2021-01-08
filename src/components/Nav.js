@@ -57,7 +57,10 @@ window.addEventListener('resize',showButton)
                         </Link>
                       </li>
                   </ul>
+<<<<<<< HEAD
                  
+=======
+>>>>>>> d7dcd110830cf2a61c220616aa372672ffebfdaa
                </div>
          </nav> 
         </>
