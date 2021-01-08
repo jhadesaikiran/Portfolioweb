@@ -85,7 +85,7 @@ const teamData =[
         title: "Kandru Sudeep Kumar",
         contact: "9505445002",
         mail: "kandrusudeepkr.mec18@itbhu.ac.in",
-        desc:"Executive-Manager",
+        desc:"Co-Founder, Executive-Manager",
         clg : "IIT BHU Varanasi",
     },
 ]
