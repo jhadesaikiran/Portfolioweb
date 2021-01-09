@@ -24,7 +24,7 @@
   padding: 8px 20px;
   */
   border: none;
-  background: #bcd3ff;
+  background: #b5e54d;
   border-radius: 2rem;
   padding: 1rem 3rem;
   font-size: 1rem;
@@ -53,7 +53,7 @@
   font-size: 20px;
 }
 .maincont {
-  background-image: url("../images//usercov.jpg");
+  background-image: url("../images/Cityh.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -70,7 +70,7 @@
     padding: 30px;
   }
   .heading1 {
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 10px;
     padding-top: 10px;
   }
@@ -129,7 +129,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   padding: 0 6rem;
-  grid-gap: 20px;
+  grid-gap: 1px;
 }
 .uhowData {
   margin-top: 1rem;

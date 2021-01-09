@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./collabratecss.css"
-import Nithish from "../images/Nitish.jpg"
-import Kiran from "../images/kiranimage.jpg"
-import sudeep from "../images/sudeep1414.jpg";
-import harish from "../images/harish1.jpeg";
 
 import Footer from "../Footer";
 //import "../../App.css"
@@ -55,40 +51,7 @@ const userData =[
     },
 ]
 
-const teamData =[
-    {
-        icon :<img className="colImages1" src={Nithish} />,
-        title: "Nithish Veeravalli",
-       contact: "9182687397",
-       mail: "veeravallin.ece18@itbhu.ac.in",
-        desc:"Founder, App developer",
-        clg : "IIT BHU Varanasi",
-    },
-    {
-        icon :<img className="colImages1" src={Kiran} />,
-        title: "Jhade Sai Kiran",
-        contact: "7032629788",
-        mail: "jhadesaikiran.mec18@itbhu.ac.in",
-        desc:"Co-Founder, Front-end developer",
-        clg : "IIT BHU Varanasi",
-    },
-    {
-        icon :<img className="colImages1" src={harish} />,
-        title: "Medam Sai Harish",
-        contact: "6304775653",
-        mail: "medam.saiharish.mec19@itbhu.ac.in",
-        desc:"Co-Founder, Full-stack developer",
-        clg : "IIT BHU Varanasi",
-    },
-    {
-        icon :<img className="colImages1" src={sudeep} />,
-        title: "Kandru Sudeep Kumar",
-        contact: "9505445002",
-        mail: "kandrusudeepkr.mec18@itbhu.ac.in",
-        desc:"Co-Founder, Executive-Manager",
-        clg : "IIT BHU Varanasi",
-    },
-]
+
 
 export default function Collabrate() {
     return (
@@ -118,7 +81,7 @@ This website help user to navigate at the exact spot of emergency, send live fee
                  </div>
                  <div className="collcol2">
                  <div>
-        <img className="cimg" src={connecting}  />
+        <img className="cimg" alt="" src={connecting}  />
         </div>
                 
                  </div>
@@ -147,6 +110,18 @@ This website help user to navigate at the exact spot of emergency, send live fee
  
 
 
+
+
+
+
+
+        </div>
+        <Footer/> 
+        </>
+    )
+}
+
+/*
 
    <div className="colourteam">
           
@@ -178,12 +153,4 @@ faster than a cab."
           </div>
      
       </div>
-
-
-
-
-        </div>
-        <Footer/> 
-        </>
-    )
-}
+*/

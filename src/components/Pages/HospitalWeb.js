@@ -2,11 +2,14 @@ import React from "react";
 import Footer from "../Footer";
 import "./hospitalcss.css"
 //import "../../App.css"
-import user1vec from "../images/hosroomvec.jpg"
+
 import user1 from "../images/hospital.JPG"
 import user2 from "../images/hostrack.JPG"
 import hoslogin from "../images/hoslogin.JPG"
-import userabout from "../images/userabout.JPG"
+
+import teampicfrompot from "../images/team.jpg"
+
+import hospitalfun from "../images/hospitalfunc1.jpg"
 
 const hosData =[
     {
@@ -82,7 +85,7 @@ export default function HospitalWeb() {
                     })}        
    </div>
    <div className="column2">
-    <img className="hosuser1vec" src={user1vec} />
+    <img className="hosuser1vec" alt="" src={hospitalfun} />
    </div>
    </div>
    
@@ -120,7 +123,7 @@ How it Works ?
                        <img className="m1 first" src={hoslogin} alt="img1"  />
                   <img className="m1" src={user1} alt="img2" />
                   <img className="m1" src={user2} alt="img3" />
-                  <img className="m1" src={userabout} alt="img4" />
+                  <img className="m1" src={teampicfrompot} alt="img4" />
                   
                   
                   

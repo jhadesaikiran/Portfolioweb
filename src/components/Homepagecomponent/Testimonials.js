@@ -30,8 +30,8 @@ function Testimonials() {
                    </div>
                </div>
                <div className="ColumnTwo">
-<img className="Images" src={Image1} />
-<img className="Images" src={Image2} />
+<img className="Images"  alt=" " src={Image1} />
+<img className="Images"   alt=" " src={Image2} />
                </div>
             </div>
         </div>

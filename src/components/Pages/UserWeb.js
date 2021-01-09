@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 //import "../../App.css"
 import "./Userwebcss.css"
 import Footer from "../Footer";
@@ -7,8 +7,9 @@ import user1 from "../images/userwebpic.JPG"
 import user2 from "../images/USERTRACK.JPG"
 import user1vec from "../images/user1vec.jpg"
 
-import userabout from "../images/userabout.JPG"
 import userlogin from "../images/userlogin.JPG"
+
+import teampic from "../images/team.jpg"
 
 
 const userData =[
@@ -96,7 +97,7 @@ Why Choose us ?
                  })}        
 </div>
 <div className="column2">
- <img className="user1vec" src={user1vec} />
+ <img className="user1vec"   alt=" " src={user1vec} />
 </div>
 </div>
 
@@ -123,7 +124,7 @@ How it Works ?
               <div className="slider">
                   
 <div className="images">
-<input type="radio" name="slide" id="img1"  />
+<input type="radio" name="slide" id="img1"   />
 <input type="radio" name="slide" id="img2" />
 <input type="radio" name="slide" id="img3" />
 <input type="radio" name="slide" id="img4" />
@@ -131,7 +132,7 @@ How it Works ?
      <img className="m1 first" src={userlogin} alt="img1"  />
 <img className="m1" src={user1} alt="img2" />
 <img className="m1" src={user2} alt="img3" />
-<img className="m1" src={userabout} alt="img4" />
+<img className="m1" src={teampic} alt="img4" />
 
 
 

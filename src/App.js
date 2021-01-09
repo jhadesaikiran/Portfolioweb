@@ -6,6 +6,8 @@ import  Home from "./components/Pages/Home";
 import Collabrate from "./components/Pages/Collabrate";
 import UserWeb from "./components/Pages/UserWeb";
 import HospitalWeb from "./components/Pages/HospitalWeb";
+import Team from './components/Pages/Team'
+
 import Scrolltotop from "./components/Scrolltotop";
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <Route path="/hospitalweb"  component={HospitalWeb}/>
       <Route path="/userweb"  component={UserWeb}/>
       <Route path="/collabrate" component={Collabrate}/>
+      <Route path="/team" component={Team}/>
       <Route render={() => <Redirect to="/" />} />
     </Switch>
     </Router>

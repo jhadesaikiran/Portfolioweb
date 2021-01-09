@@ -17,7 +17,7 @@
   padding: 8px 20px;
   */
   border: none;
-  background: #bcd3ff;
+  background: #b5e54d;
   border-radius: 2rem;
   padding: 1rem 3rem;
   font-size: 1rem;
@@ -53,7 +53,7 @@
   font-size: 20px;
 }
 .main-hos-container {
-  background-image: url("../images/hoscover.jpg");
+  background-image: url("../images/Hsptlweb.jpg");
   display: grid;
   grid-template-columns: 1fr;
   height: 100vh;
@@ -70,7 +70,7 @@
     padding: 30px;
   }
   .hosheading1 {
-    font-size: 60px;
+    font-size: 40px;
     padding-left: 1rem;
     padding-top: 1rem;
   }
@@ -121,8 +121,9 @@
 }
 .hosuser1vec {
   position: relative;
+  margin-top: 120px;
   float: center;
-  max-width: 400px;
+  max-height: 300px;
 }
 
 @media screen and (max-width: 768px) {

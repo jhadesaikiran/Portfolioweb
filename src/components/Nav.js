@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import {Link }from "react-router-dom"
-import { Button } from './Button';
+
 import "./nav.css"
 
  function Nav() {
@@ -52,15 +52,17 @@ window.addEventListener('resize',showButton)
                         </Link>
                       </li>
                       <li className="nav-item">
+                        <Link to='/team' className="nav-links" onClick={closeMobileMenu}>
+                           Our Team
+                        </Link>
+                      </li>
+                      <li className="nav-item">
                         <Link to='/collabrate' className="nav-links" onClick={closeMobileMenu}>
                            Collaborate
                         </Link>
                       </li>
                   </ul>
-<<<<<<< HEAD
                  
-=======
->>>>>>> d7dcd110830cf2a61c220616aa372672ffebfdaa
                </div>
          </nav> 
         </>

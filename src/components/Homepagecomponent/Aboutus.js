@@ -18,7 +18,7 @@ faster than a cab."
             </p>
             </div>
             <div className="coloum2">
-            <img className="aImages" src={connecting} />
+            <img className="aImages" alt="" src={connecting} />
             </div>
             </div>
         </div>

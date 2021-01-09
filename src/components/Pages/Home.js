@@ -5,7 +5,7 @@ import Cards from "../Homepagecomponent/Cards";
 import Footer from "../Footer";
 import Mainsection from "../Homepagecomponent/Mainsection"
 import Stats from "../Homepagecomponent/Stats";
-import Testimonials from "../Homepagecomponent/Testimonials";
+//import Testimonials from "../Homepagecomponent/Testimonials";
 
 
 function Home() {
