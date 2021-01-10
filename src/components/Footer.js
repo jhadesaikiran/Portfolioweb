@@ -91,12 +91,12 @@ function Footer() {
                             </div>
                             <div className="button-style-footer">
                                 <button className='btnsend' onClick={()=>{
-                                      setname('')
-                                      setemail('')
-                                      settext('')
-                                      setmessage('')
-                                      setmessagealert(false)
-                                }>Reset</button>
+                                        setname('')
+                                        setemail('')
+                                        settext('')
+                                        setmessage('')
+                                        setmessagealert(false)
+                                }}>Reset</button>
                                 <button className='btnsend' type='submit'>Send</button>
                             </div>
                             {messagealert && <div style={{color:messagealertcolor}}>{message}</div>}
