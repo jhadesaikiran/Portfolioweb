@@ -7,12 +7,6 @@ function Footer() {
     const [email, setemail] = useState('')
     const [name, setname] = useState('')
     const [text, settext] = useState('')
-    const [message, setmessage] = useState('')
-    const [messagealert, setmessagealert] = useState(false)
-    const [messagealertcolor, setmessagealertcolor] = useState('')
-    useEffect(() => {
-        // erw
-    }, [message])
     return (
         <div className='footer-container'>
             <section className='footer-subscription'>
@@ -79,8 +73,6 @@ function Footer() {
                                         setname('')
                                         setemail('')
                                         settext('')
-                                        setmessage('')
-                                        setmessagealert(false)
                                 }}>Reset</button>
                                 <button className='btnsend' onClick={()=>{
                                     fetch('https://serverprioritypulse.herokuapp.com/contact/add',{
@@ -92,22 +84,16 @@ function Footer() {
                                         })
                                     }).then(res=>res.json())
                                     .then(resss=>{
-                                        setmessagealertcolor('green')
-                                        setmessagealert(true)
-                                        setmessage('Sent...')
                                         setname('')
                                         setemail('')
                                         settext('')
-                                        setmessage('')
+                                        alert('Message sent....')
                                     }).catch(err => {
                                         console.log(err)
-                                        setmessagealertcolor('red')
-                                        setmessagealert(true)
-                                        setmessage('Some Error Occured Try again...!!')
+                                        alert('Some Error occured try again.....!')
                                     })
                                 }}>Send</button>
                             </div>
-                            {messagealert && <div style={{color:messagealertcolor}}>{message}</div>}
                         </form>
                     </div>
                 </div>
