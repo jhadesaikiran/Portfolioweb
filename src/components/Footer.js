@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import './Footer.css';
 
 import { Link } from 'react-router-dom';
@@ -10,6 +10,9 @@ function Footer() {
     const [message, setmessage] = useState('')
     const [messagealert, setmessagealert] = useState(false)
     const [messagealertcolor, setmessagealertcolor] = useState('')
+    useEffect(() => {
+        // erw
+    }, [message])
     return (
         <div className='footer-container'>
             <section className='footer-subscription'>
