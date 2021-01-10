@@ -86,21 +86,21 @@ function Footer() {
                                             "Content-Type":"application/json"
                                         },body:JSON.stringify({
                                             name,email,message:text
-                                        }).then(res=>res.json())
-                                        .then(resss=>{
-                                            setmessagealertcolor('green')
-                                            setmessagealert(true)
-                                            setmessage('Sent...')
-                                            setname('')
-                                            setemail('')
-                                            settext('')
-                                            setmessage('')
-                                        }).catch(err => {
-                                            console.log(err)
-                                            setmessagealertcolor('red')
-                                            setmessagealert(true)
-                                            setmessage('Some Error Occured Try again...!!')
                                         })
+                                    }).then(res=>res.json())
+                                    .then(resss=>{
+                                        setmessagealertcolor('green')
+                                        setmessagealert(true)
+                                        setmessage('Sent...')
+                                        setname('')
+                                        setemail('')
+                                        settext('')
+                                        setmessage('')
+                                    }).catch(err => {
+                                        console.log(err)
+                                        setmessagealertcolor('red')
+                                        setmessagealert(true)
+                                        setmessage('Some Error Occured Try again...!!')
                                     })
                                 }}>Send</button>
                             </div>
