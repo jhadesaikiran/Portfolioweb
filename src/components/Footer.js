@@ -41,24 +41,6 @@ function Footer() {
                         <h2>Leave a Message</h2>
                         <form className="form-input" onSubmit={e=>{
                             e.preventDefault()
-                            fetch('https://serverprioritypulse.herokuapp.com/contact/add',{
-                                method:'post',
-                                headers:{
-                                    "Content-Type":"application/json"
-                                },body:JSON.stringify({
-                                    name,email,message:text
-                                }).then(res=>res.json())
-                                .then(resss=>{
-                                    setmessagealertcolor('green')
-                                    setmessagealert(true)
-                                    setmessage('Sent...')
-                                }).catch(err => {
-                                    console.log(err)
-                                    setmessagealertcolor('red')
-                                    setmessagealert(true)
-                                    setmessage('Some Error Occured Try again...!!')
-                                })
-                            })
                         }}>
                             <div className='footer-input-areas'>
                                 <div className="form-input-items">
@@ -97,7 +79,30 @@ function Footer() {
                                         setmessage('')
                                         setmessagealert(false)
                                 }}>Reset</button>
-                                <button className='btnsend' type='submit'>Send</button>
+                                <button className='btnsend' onClick={()=>{
+                                    fetch('https://serverprioritypulse.herokuapp.com/contact/add',{
+                                        method:'post',
+                                        headers:{
+                                            "Content-Type":"application/json"
+                                        },body:JSON.stringify({
+                                            name,email,message:text
+                                        }).then(res=>res.json())
+                                        .then(resss=>{
+                                            setmessagealertcolor('green')
+                                            setmessagealert(true)
+                                            setmessage('Sent...')
+                                            setname('')
+                                            setemail('')
+                                            settext('')
+                                            setmessage('')
+                                        }).catch(err => {
+                                            console.log(err)
+                                            setmessagealertcolor('red')
+                                            setmessagealert(true)
+                                            setmessage('Some Error Occured Try again...!!')
+                                        })
+                                    })
+                                }}>Send</button>
                             </div>
                             {messagealert && <div style={{color:messagealertcolor}}>{message}</div>}
                         </form>
