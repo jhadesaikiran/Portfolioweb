@@ -1,44 +1,492 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", sans-serif;
+.App {
+  /* text-align: center; */
+  width: 99vw;
+  position: absolute;
+  overflow: hidden;
+  min-height: 100vh;
+  /* visibility: hidden; */
 }
 
-.home,
-.hospitalweb,
-.userweb,
-.collabrate {
+.navbar{
+  height: 60vh;
+}
+
+.navbar_logo{
+  margin-top: -40px !important;
+  width: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar_list{
   display: flex;
-  height: 90vh;
+  right: 0;
+  position: absolute;
+  margin-top: -30px;
+  margin-right: 10%;
+}
+
+.navbar_list div{
+  margin-top: -20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  font-family: Montserrat;
+}
+
+.odd{
+  border-bottom: #dbee35 4px solid;
+  transition: ease transform 3s;
+}
+
+.navbar_list div:hover{
+  border-bottom: #dbee35 4px solid;
+  transition: transform 3s;
+}
+
+.home_displaytag{
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.home_idea_img{
+  padding-right: 20px;
+}
+
+.home_idea_text .home_deal_text{
+  font-family: Montserrat;
+  padding-left: 30px;
+}
+
+.home_deal_text p{
+  width: 40vw;
+  font-size: 20px;
+}
+
+.home_idea_text p{
+  width: 50vw;
+  color: rgba(125,125,125,1);
+  font-size: 20px;
+}
+
+.home_compu_img{
+  width: 40%;
+  /* position: fixed; */
+}
+
+.home_title{
+  font-weight: 700;
+  font-size: x-large;
+  color: rgba(57,9,153,1);
+}
+
+.super{
+  width: 100vw;
+  height: 68vh;
+  margin-left: -30px;
+  background-image: linear-gradient(to right, #a116ef, #390999);
+  position: absolute;
+  overflow: visible;
+  transform: matrix(1,0,0,1,31.2357,-191.5251) rotate(-8deg);
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.161));
+  transform-origin: center;
+  z-index: -1;
+}
+
+.footer{
+  background-image: linear-gradient(to right, #a116ef, #390999);
+  width: 99vw;
+  height: 35vh;
+}
+
+.footer_logos{
+  position: absolute;
+  right: 0;
+}
+
+.footer_logos img{
+  width: 40px;
+  margin: 20px;
+  padding: 0 20px;
+}
+
+.footer_logo{
+  width: 30vw;
+  padding: 20px;
+}
+
+.footer_dialog{
+  display: flex;
+}
+
+.footer_foottextcontainer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 50px;
+}
+
+.footer_foottext{
+  display: flex;
+  padding: 10px;
+}
+
+.footer_foottext img{
+  width: 30px;
+}
+
+.whyus{
+  width: 100vw;
+}
+
+.whyus_head{
+  margin: 0 auto;
+  width: fit-content;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgba(255,0,78,1);
+}
+
+.whyus_body{
+  width: 80vw;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+}
+
+.whyus_contain{
+  margin-left: 10%;
+}
+
+.whyus_logo{
+  border: rgba(255,0,78,1) 4px solid;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px;
+}
+
+.whyus_body img{
+  width: 65px;
+  margin: 0 auto;
+}
+
+.user_start{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.hospi_start{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.user_start img{
+  width: 50vw;
+}
+
+.hospi_start img{
+  width: 60vw;
+}
+
+.user_buttons{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.user_buttons button{
+  margin: 10px 30px;
+}
+
+.user_bt1{
+  background-color: white;
+  border: none;
+  white-space: nowrap;
+  font-size: 25px;
+  font-family: Comfortaa;
+  padding: 30px;
+  border-radius: 1000px;
+  background-color: rgba(93,13,183,1);
+  color: rgba(254,221,0,1);
+  cursor: pointer;
+}
+
+.user_bt2{
+  background-color: white;
+  border: none;
+  white-space: nowrap;
+  font-size: 25px;
+  font-family: Comfortaa;
+  border: rgba(93,13,183,1) 3px solid;
+  padding: 30px;
+  border-radius: 1000px;
+  color: rgba(255,0,78,1);
+  cursor: pointer;
+}
+
+.user_howitworks_body{
+  width: 90vw;
+  display: flex;
+  margin: 0 auto;
+}
+
+.user_howitworks_txt{
+  font-family: Montserrat;
+  margin: 30px;
+  width: 50%;
+}
+
+.user_howitworks_txt div{
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgba(57,9,153,1);
+}
+
+.footer_foottext div{
+  color: white;
+}
+
+.aboutus{
+  width: 40vw;
+}
+
+.aboutus p{
+  color: rgba(125,125,125,1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.userweb {
-  background-image: url(./components/images/cover1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+.App-link {
+  color: #61dafb;
 }
 
-.hospitalweb {
-  background-image: url(./components/images/cover1.jpg);
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.collabrate {
-  background-image: url(./components/images/cover1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+.totalmasks{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.mask1{
+  margin: 30px;
+}
+
+.aboutmasktxt{
+  width: 20vw;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.Polygon_1 {
+  filter: drop-shadow(5px 5px 5px rgba(157, 22, 236, 1));
+  overflow: visible;
+  position: absolute;
+  width: 20vw;
+  /* height: 250px; */
+  /* left: 0px; */
+  /* top: 0px; */
+  transform: matrix(1,0,0,1,0,0);
+  z-index: -2;
+}
+
+.mask1 img{
+  width: 18vw;
+}
+
+#Polygon_1 {
+  fill: rgba(255,255,255,1);
+}
+
+.underscore{
+  height: 2px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 1000px;
+  border: 1px solid rgba(125,125,125,1) ;
+}
+
+.description{
+  font-size: 15px;
+  color: rgba(125,125,125,1);
+}
+
+.colabimg{
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+}
+
+.collab_1{
+  color: rgba(57,9,153,1);
+  font-size: 30px;
+  padding: 10px;
+}
+
+.collab_2{
+  color: rgba(57,9,153,1);
+  font-family: Montserrat;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.collab_3{
+  color: rgba(255,0,78,1);
+  font-family: Montserrat;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.collatxt{
+  position: absolute;
+  margin-top: -70vh;
+  margin-left: 60px;
+}
+
+.colbutton{
+  border: none;
+  background-color: #a116ef;
+  padding: 20px 50px;
+  font-size: large;
+  border-radius: 2344px;
+  cursor: pointer;
+  margin: 20px auto;
+  width: fit-content;
+  display: flex;
+}
+
+#wholeSlider{
+  margin: 50px auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px){
+  .super{
+    height: 60vh;
+    margin-left: -30px;
+  }
+  .navbar{
+    height: 40vh;
+  }
+  .navbar_logo{
+    margin-top: -10px !important;
+    margin-left: 10px !important ;
+    width: 60vw;
+  }
+  .navbar_list{
+    display: none;
+  }
+  .home_displaytag{
+    flex-direction: column;
+  }
+  .home_idea_text{
+    width: 90vw;
+  }
+  .home_idea_text p{
+    width: 80vw;
+    font-size: 20px;
+  }
+  .footer{
+    height: fit-content;
+  }
+  .footer_logos{
+    position: relative;
+  }
+  .footer_logo{
+    width: 70vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .footer_dialog{
+    flex-direction: column;
+  }
+  .footer_foottextcontainer{
+    position: relative;
+    margin: 0 auto;
+  }
+  .home_compu_img{
+    width: 70%;
+  }
+  .user_start{
+    flex-direction: column-reverse;
+  }
+  .user_start img{
+    width: 90vw;
+  }
+  .hospi_start img{
+    width: 90vw;
+  }
+  .user_bt1 {
+    font-size: 20px;
+  }
+  .user_bt2{
+    font-size: 20px;
+  }
+  .user_howitworks_body{
+    flex-direction: column;
+  }
+  .user_howitworks_txt{
+    width: 70vw;
+  }
+  .aboutus{
+    width: 80vw;
+  }
+  .Polygon_1{
+    width: 287px;
+    height: 250px;
+  }
+  .mask1 img{
+    width: 275px;
+  }
+  .totalmasks{
+    flex-direction: column;
+  }
+  .aboutmasktxt{
+    width: 80vw;
+  }
+  .colabimg{
+    position: relative;
+  }
+  .collatxt{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto !important;
+  }
 }

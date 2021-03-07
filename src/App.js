@@ -1,32 +1,27 @@
-import React from "react";
+import React,{useEffect} from 'react';
 import './App.css';
-import Nav from "./components/Nav";
-import { BrowserRouter as Router,Switch,Route,Redirect } from "react-router-dom";
-import  Home from "./components/Pages/Home";
-import Collabrate from "./components/Pages/Collabrate";
-import UserWeb from "./components/Pages/UserWeb";
-import HospitalWeb from "./components/Pages/HospitalWeb";
-import Team from './components/Pages/Team'
-
-import Scrolltotop from "./components/Scrolltotop";
+import { BrowserRouter, Redirect, Route } from 'react-router-dom'
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Home from './screens/Home';
+import User from './screens/User';
+import Hospital from './screens/Hospital';
+import Aboutus from './screens/Aboutus';
+import Collaborte from './screens/Collaborte';
 
 function App() {
   return (
-    <>
-    <Router>
-      <Scrolltotop/>
-    <Nav/>
-    <Switch>
-      <Route path="/" exact component={Home}/>
-      <Route path="/hospitalweb"  component={HospitalWeb}/>
-      <Route path="/userweb"  component={UserWeb}/>
-      <Route path="/collabrate" component={Collabrate}/>
-      <Route path="/team" component={Team}/>
-      <Route render={() => <Redirect to="/" />} />
-    </Switch>
-    </Router>
-   
-    </>
+    <div className="App">
+      <BrowserRouter>
+        <Route path='/' exact component={Home} />
+        <Route path='/home' component={Home} />
+        <Route path='/user' component={User} />
+        <Route path='/hospital' component={Hospital} />
+        <Route path='/aboutus' component={Aboutus} />
+        <Route path='/collaborate' component={Collaborte} />
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
