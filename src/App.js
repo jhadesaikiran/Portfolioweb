@@ -1,8 +1,8 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import './App.css';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Home from './screens/Home';
 import User from './screens/User';
 import Hospital from './screens/Hospital';

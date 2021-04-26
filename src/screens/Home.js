@@ -54,7 +54,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <img className='home_compu_img' src={compu} alt='computer' />
+                <div>
+                    <img className='home_compu_img' src={compu} alt='computer' />
+                    <img className='home_compu_img2' src={compu} alt='computer' />
+                </div>
             </div>
             <WhyUs />
         </div>
