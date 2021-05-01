@@ -1,10 +1,12 @@
 import React from 'react'
 import Slider from '../components/Slider'
-import WhyUs from '../components/WhyUs'
+// import WhyUs from '../components/WhyUs'
 import hospi from '../images/ID10593@2x.png'
 import user from '../images/ID7495.png'
 import imagema from '../images/ID2254423.png'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import WhyUsnew from '../components/WhyUsNew'
 
 const tutorialSteps = [
     {
@@ -60,7 +62,8 @@ function Hospital() {
                     <Slider tutorialSteps={tutorialSteps} />
                 </div>
             </div>
-            <WhyUs />
+            <WhyUsnew />
+            <Footer />
         </div>
     )
 }

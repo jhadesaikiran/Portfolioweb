@@ -1,10 +1,12 @@
 import React from 'react'
-import WhyUs from '../components/WhyUs'
+// import WhyUs from '../components/WhyUs'
 import user from '../images/ID7495.png'
 import hospi from '../images/ID10593@2x.png'
 import imagema from '../images/ID2254423.png'
 import Slider from '../components/Slider'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import WhyUsnew from '../components/WhyUsNew'
 
 const tutorialSteps = [
     {
@@ -60,7 +62,8 @@ function User() {
                     <Slider tutorialSteps={tutorialSteps} />
                 </div>
             </div>
-            <WhyUs />
+            <WhyUsnew />
+            <Footer />
         </div>
     )
 }

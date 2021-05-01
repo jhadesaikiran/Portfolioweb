@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 // import Navbar from './components/Navbar';
 import Home from './screens/Home';
 import User from './screens/User';
@@ -19,7 +19,6 @@ function App() {
         <Route path='/hospital' component={Hospital} />
         <Route path='/aboutus' component={Aboutus} />
         <Route path='/collaborate' component={Collaborte} />
-        <Footer />
       </BrowserRouter>
     </div>
   );

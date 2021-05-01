@@ -2,6 +2,7 @@ import { Input } from '@material-ui/core'
 import React from 'react'
 import Navbar from '../components/Navbar'
 import imagema from '../images/ID2254423.png'
+import Footer from '../components/Footer';
 
 function Collaborte() {
     return (
@@ -15,6 +16,7 @@ function Collaborte() {
                 <Input fullWidth={true} placeholder='Email' />
                 <button className='colbutton'>Contact</button>
             </div>
+            <Footer />
         </div>
     )
 }

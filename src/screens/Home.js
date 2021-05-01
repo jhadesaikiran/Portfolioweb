@@ -1,14 +1,17 @@
-import React from 'react'
-import WhyUs from '../components/WhyUs'
+import React, { useState } from 'react'
+// import WhyUs from '../components/WhyUs'
 import idea from '../images/Idea_concept.png'
 import compu from '../images/Pngtreecomputer_monitor_pictur.png'
 import user from '../images/ID7495.png'
 import hosp from '../images/ID78.png'
 import { useHistory } from 'react-router'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import WhyUsnew from '../components/WhyUsNew'
 
 function Home() {
     const history = useHistory()
+    const [image, setimage] = useState(null)
     return (
         <>
         <Navbar location='home' />
@@ -29,8 +32,14 @@ function Home() {
             <div className='whyus_head'>Our Websites</div>
             <div className='home_displaytag'>
                 <div className='home_deal_text'>
-                    <div style={{display:'flex',alignItems:'center'}}>
-                        <img style={{width:'200px',cursor:'pointer'}} onClick={()=>history.push('/user')} src={user} alt='user' />
+                    <div id='home_flex_mobile' style={{display:'flex',alignItems:'center'}}>
+                        <img style={{width:'200px',cursor:'pointer'}} 
+                            onClick={()=>history.push('/user')} 
+                            src={user} 
+                            alt='user'
+                            onMouseOver={()=>setimage(user)}
+                            onMouseOut={()=>setimage(null)} 
+                        />
                         <div>
                             <div className='home_title' onClick={()=>history.push('/user')}>User Website</div>
                             <p>We built an User Website which serves patient to
@@ -41,8 +50,14 @@ function Home() {
                             of the premedication</p>
                         </div>
                     </div>
-                    <div style={{display:'flex',alignItems:'center'}}>
-                        <img style={{width:'200px',cursor:'pointer'}} onClick={()=>history.push('/hospital')} src={hosp} alt='hospital' />
+                    <div id='home_flex_mobile' style={{display:'flex',alignItems:'center'}}>
+                        <img style={{width:'200px',cursor:'pointer'}} 
+                            onClick={()=>history.push('/hospital')} 
+                            src={hosp} 
+                            alt='hospital' 
+                            onMouseOver={()=>setimage(hosp)}
+                            onMouseOut={()=>setimage(null)}
+                        />
                         <div>
                             <div className='home_title' onClick={()=>history.push('/hospital')}>Hospital Website</div>
                             <p>
@@ -54,12 +69,13 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='home_hover'>
                     <img className='home_compu_img' src={compu} alt='computer' />
-                    <img className='home_compu_img2' src={compu} alt='computer' />
+                    {image && <img className='animating_popup' src={image} alt='img' />}
                 </div>
             </div>
-            <WhyUs />
+            <WhyUsnew />
+            <Footer />
         </div>
         </>
     )

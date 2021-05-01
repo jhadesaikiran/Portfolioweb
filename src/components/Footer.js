@@ -10,13 +10,13 @@ import mail from '../images/ID213-2133056_icon-mail-png-ro.png'
 function Footer() {
     return (
         <div className='footer'>
-            <div className='footer_logos'>
-                <img src={fb} alt='facebook' />
-                <img src={linkin} alt='linked in' />
-                <img src={insta} alt='instagram' />
-            </div>
+            <img className='footer_logo' src={logo} alt='logo' />
             <div className='footer_dialog'>
-                <img className='footer_logo' src={logo} alt='logo' />
+                <div className='footer_logos'>
+                    <img src={fb} alt='facebook' />
+                    <img src={linkin} alt='linked in' />
+                    <img src={insta} alt='instagram' />
+                </div>
                 <div className='footer_foottextcontainer'>
                     <div className='footer_foottext'>
                         <img src={call} alt='phone' />
