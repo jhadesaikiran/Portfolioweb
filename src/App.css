@@ -16,7 +16,9 @@
 }
 
 .navbar_logo{
-  width: 300px;
+  max-width: 300px;
+  width: 30vw;
+  min-width: 150px;
   height: auto;
   line-height: 60px;
   padding: 0 20px;
@@ -27,9 +29,11 @@
 nav{
   float: right;
   position: relative;
-  width: 490px;
+  max-width: 550px;
+  width: 60vw;
+  min-width: 350px;
   display: flex;
-  margin: 40px 0;
+  margin: 40px 20px;
   /* height: 50px; */
   font-size: 0;
 }
@@ -49,9 +53,10 @@ nav a{
   text-decoration: none;
   position: relative;
   z-index: 1;
-  margin: 20px 5px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
   font-family: Montserrat;
-  text-align: center;
 }
 
 nav .animation{
@@ -65,39 +70,39 @@ nav .animation{
 }
 
 a:nth-child(1){
-  width: 70px;
+  width: 90px;
 }
 nav .start-home,a:nth-child(1):hover~.animation{
-  width: 70px;
-  left: 5px;
+  width: 90px;
+  left: 0;
 }
 a:nth-child(2){
-  width: 70px;
+  width: 90px;
 }
 nav .start-user,a:nth-child(2):hover~.animation{
-  width: 70px;
-  left: 85px;
+  width: 90px;
+  left: 90px;
 }
 a:nth-child(3){
-  width: 90px;
+  width: 110px;
 }
 nav .start-hospital,a:nth-child(3):hover~.animation{
-  width: 90px;
-  left: 165px;
+  width: 110px;
+  left: 180px;
 }
 a:nth-child(4){
-  width: 100px;
+  width: 120px;
 }
 nav .start-aboutus,a:nth-child(4):hover~.animation{
-  width: 100px;
-  left: 265px;
+  width: 120px;
+  left: 290px;
 }
 a:nth-child(5){
-  width: 110px;
+  width: 140px;
 }
 nav .start-collaborate,a:nth-child(5):hover~.animation{
-  width: 110px;
-  left: 375px;
+  width: 140px;
+  left: 410px;
 }
 
 .home_displaytag{
@@ -105,11 +110,12 @@ nav .start-collaborate,a:nth-child(5):hover~.animation{
   position: relative;
   align-items: center;
   width: 90vw;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .home_idea_img{
-  margin: 30px;
+  width: 30vw;
+  margin: 0 30px 0 0;
 }
 
 .home_idea_text .home_deal_text{
@@ -190,6 +196,7 @@ nav .start-collaborate,a:nth-child(5):hover~.animation{
   background-image: linear-gradient(to right, #a116ef, #390999);
   width: 99vw;
   height: 35vh;
+  padding-top: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -197,7 +204,7 @@ nav .start-collaborate,a:nth-child(5):hover~.animation{
 
 .footer_logos{
   position: absolute;
-  right: 20px;
+  right: 30px;
 }
 
 .footer_logos img{
@@ -347,6 +354,10 @@ nav .start-collaborate,a:nth-child(5):hover~.animation{
   color: rgba(57,9,153,1);
 }
 
+.user_howitworks_txt p{
+  margin-bottom: 20px;
+}
+
 .footer_foottext div{
   color: white;
 }
@@ -387,19 +398,21 @@ nav .start-collaborate,a:nth-child(5):hover~.animation{
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #ebf5fc;
+  /* background-image: linear-gradient(#ebf5fc); */
+  background-color: #ebf5fc;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.7s ease;
+  transition: 0.7s ease-in-out;
 }
 
 .whyusnew .card:hover .box{
   transform: translateY(-50px);
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+  background-image: linear-gradient(45deg, #b95ce4, #4f29cd);
+  background-color: #b95ce4;
 }
 
 .whyusnew .card .box .content{
@@ -669,6 +682,7 @@ nav .start-collaborate,a:nth-child(5):hover~.animation{
     width: 80vw;
   }
   .home_idea_img{
+    width: 80vw;
     padding: 0;
     margin: 10px auto;
   }
